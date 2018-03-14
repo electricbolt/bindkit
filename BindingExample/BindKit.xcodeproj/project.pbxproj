@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		747B7DDE2044A45B002BD36E /* BindKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 747B7DDB2044A45B002BD36E /* BindKit.h */; };
+		747B7DFE2044A64F002BD36E /* EBKObjC.c in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DE92044A64E002BD36E /* EBKObjC.c */; };
+		747B7DFF2044A64F002BD36E /* NSObject+EBKSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DEC2044A64E002BD36E /* NSObject+EBKSubclass.m */; };
+		747B7E002044A64F002BD36E /* EBKUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DED2044A64F002BD36E /* EBKUISegmentedControl.m */; };
+		747B7E012044A64F002BD36E /* EBKUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DEF2044A64F002BD36E /* EBKUISlider.m */; };
+		747B7E022044A64F002BD36E /* EBKUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DF02044A64F002BD36E /* EBKUISwitch.m */; };
+		747B7E032044A64F002BD36E /* EBKProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DF12044A64F002BD36E /* EBKProperty.m */; };
+		747B7E042044A64F002BD36E /* EBKUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DF22044A64F002BD36E /* EBKUITextField.m */; };
+		747B7E052044A64F002BD36E /* UIView+EBKBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DF52044A64F002BD36E /* UIView+EBKBindings.m */; };
+		747B7E062044A64F002BD36E /* NSObject+EBKBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DF72044A64F002BD36E /* NSObject+EBKBinding.m */; };
+		747B7E072044A64F002BD36E /* EBKLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DF82044A64F002BD36E /* EBKLog.m */; };
+		747B7E082044A64F002BD36E /* EBKUIStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DF92044A64F002BD36E /* EBKUIStepper.m */; };
+		747B7E092044A64F002BD36E /* EBKBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DFA2044A64F002BD36E /* EBKBinding.m */; };
+		747B7E0A2044A64F002BD36E /* EBKUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B7DFD2044A64F002BD36E /* EBKUITextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		747B7DD62044A45B002BD36E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				747B7DDE2044A45B002BD36E /* BindKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		747B7DD82044A45B002BD36E /* libBindKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBindKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		747B7DDB2044A45B002BD36E /* BindKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindKit.h; sourceTree = "<group>"; };
+		747B7DE92044A64E002BD36E /* EBKObjC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = EBKObjC.c; sourceTree = "<group>"; };
+		747B7DEC2044A64E002BD36E /* NSObject+EBKSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EBKSubclass.m"; sourceTree = "<group>"; };
+		747B7DED2044A64F002BD36E /* EBKUISegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBKUISegmentedControl.m; sourceTree = "<group>"; };
+		747B7DEE2044A64F002BD36E /* EBKBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBKBinding.h; sourceTree = "<group>"; };
+		747B7DEF2044A64F002BD36E /* EBKUISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBKUISlider.m; sourceTree = "<group>"; };
+		747B7DF02044A64F002BD36E /* EBKUISwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBKUISwitch.m; sourceTree = "<group>"; };
+		747B7DF12044A64F002BD36E /* EBKProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBKProperty.m; sourceTree = "<group>"; };
+		747B7DF22044A64F002BD36E /* EBKUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBKUITextField.m; sourceTree = "<group>"; };
+		747B7DF32044A64F002BD36E /* EBKProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBKProperty.h; sourceTree = "<group>"; };
+		747B7DF42044A64F002BD36E /* NSObject+EBKSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EBKSubclass.h"; sourceTree = "<group>"; };
+		747B7DF52044A64F002BD36E /* UIView+EBKBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EBKBindings.m"; sourceTree = "<group>"; };
+		747B7DF62044A64F002BD36E /* EBKObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBKObjC.h; sourceTree = "<group>"; };
+		747B7DF72044A64F002BD36E /* NSObject+EBKBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EBKBinding.m"; sourceTree = "<group>"; };
+		747B7DF82044A64F002BD36E /* EBKLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBKLog.m; sourceTree = "<group>"; };
+		747B7DF92044A64F002BD36E /* EBKUIStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBKUIStepper.m; sourceTree = "<group>"; };
+		747B7DFA2044A64F002BD36E /* EBKBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBKBinding.m; sourceTree = "<group>"; };
+		747B7DFD2044A64F002BD36E /* EBKUITextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBKUITextView.m; sourceTree = "<group>"; };
+		747B7E0E2044A9C6002BD36E /* NSObject+EBKBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+EBKBinding.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		747B7DD52044A45B002BD36E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		747B7DCF2044A45B002BD36E = {
+			isa = PBXGroup;
+			children = (
+				747B7DDA2044A45B002BD36E /* BindKit */,
+				747B7DD92044A45B002BD36E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		747B7DD92044A45B002BD36E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				747B7DD82044A45B002BD36E /* libBindKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		747B7DDA2044A45B002BD36E /* BindKit */ = {
+			isa = PBXGroup;
+			children = (
+				747B7DE72044A5AD002BD36E /* public */,
+				747B7DE82044A604002BD36E /* private */,
+			);
+			path = BindKit;
+			sourceTree = "<group>";
+		};
+		747B7DE72044A5AD002BD36E /* public */ = {
+			isa = PBXGroup;
+			children = (
+				747B7DDB2044A45B002BD36E /* BindKit.h */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		747B7DE82044A604002BD36E /* private */ = {
+			isa = PBXGroup;
+			children = (
+				747B7E0D2044A95C002BD36E /* subclass */,
+				747B7E0C2044A942002BD36E /* logging */,
+				747B7E0B2044A655002BD36E /* views */,
+				747B7DEE2044A64F002BD36E /* EBKBinding.h */,
+				747B7DFA2044A64F002BD36E /* EBKBinding.m */,
+				747B7DF32044A64F002BD36E /* EBKProperty.h */,
+				747B7DF12044A64F002BD36E /* EBKProperty.m */,
+				747B7E0E2044A9C6002BD36E /* NSObject+EBKBinding.h */,
+				747B7DF72044A64F002BD36E /* NSObject+EBKBinding.m */,
+				747B7DF52044A64F002BD36E /* UIView+EBKBindings.m */,
+			);
+			name = private;
+			sourceTree = "<group>";
+		};
+		747B7E0B2044A655002BD36E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				747B7DED2044A64F002BD36E /* EBKUISegmentedControl.m */,
+				747B7DEF2044A64F002BD36E /* EBKUISlider.m */,
+				747B7DF92044A64F002BD36E /* EBKUIStepper.m */,
+				747B7DF02044A64F002BD36E /* EBKUISwitch.m */,
+				747B7DF22044A64F002BD36E /* EBKUITextField.m */,
+				747B7DFD2044A64F002BD36E /* EBKUITextView.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		747B7E0C2044A942002BD36E /* logging */ = {
+			isa = PBXGroup;
+			children = (
+				747B7DF82044A64F002BD36E /* EBKLog.m */,
+			);
+			name = logging;
+			sourceTree = "<group>";
+		};
+		747B7E0D2044A95C002BD36E /* subclass */ = {
+			isa = PBXGroup;
+			children = (
+				747B7DF42044A64F002BD36E /* NSObject+EBKSubclass.h */,
+				747B7DEC2044A64E002BD36E /* NSObject+EBKSubclass.m */,
+				747B7DE92044A64E002BD36E /* EBKObjC.c */,
+				747B7DF62044A64F002BD36E /* EBKObjC.h */,
+			);
+			name = subclass;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		747B7DD72044A45B002BD36E /* BindKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747B7DE12044A45B002BD36E /* Build configuration list for PBXNativeTarget "BindKit" */;
+			buildPhases = (
+				747B7DD42044A45B002BD36E /* Sources */,
+				747B7DD52044A45B002BD36E /* Frameworks */,
+				747B7DD62044A45B002BD36E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BindKit;
+			productName = BindKit;
+			productReference = 747B7DD82044A45B002BD36E /* libBindKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		747B7DD02044A45B002BD36E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Electric Bolt Limited";
+				TargetAttributes = {
+					747B7DD72044A45B002BD36E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 747B7DD32044A45B002BD36E /* Build configuration list for PBXProject "BindKit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 747B7DCF2044A45B002BD36E;
+			productRefGroup = 747B7DD92044A45B002BD36E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				747B7DD72044A45B002BD36E /* BindKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		747B7DD42044A45B002BD36E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747B7E092044A64F002BD36E /* EBKBinding.m in Sources */,
+				747B7E042044A64F002BD36E /* EBKUITextField.m in Sources */,
+				747B7E072044A64F002BD36E /* EBKLog.m in Sources */,
+				747B7DFF2044A64F002BD36E /* NSObject+EBKSubclass.m in Sources */,
+				747B7E032044A64F002BD36E /* EBKProperty.m in Sources */,
+				747B7E062044A64F002BD36E /* NSObject+EBKBinding.m in Sources */,
+				747B7E052044A64F002BD36E /* UIView+EBKBindings.m in Sources */,
+				747B7E082044A64F002BD36E /* EBKUIStepper.m in Sources */,
+				747B7E022044A64F002BD36E /* EBKUISwitch.m in Sources */,
+				747B7E002044A64F002BD36E /* EBKUISegmentedControl.m in Sources */,
+				747B7DFE2044A64F002BD36E /* EBKObjC.c in Sources */,
+				747B7E012044A64F002BD36E /* EBKUISlider.m in Sources */,
+				747B7E0A2044A64F002BD36E /* EBKUITextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		747B7DDF2044A45B002BD36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		747B7DE02044A45B002BD36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		747B7DE22044A45B002BD36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLCLPVKM8C;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		747B7DE32044A45B002BD36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLCLPVKM8C;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		747B7DD32044A45B002BD36E /* Build configuration list for PBXProject "BindKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747B7DDF2044A45B002BD36E /* Debug */,
+				747B7DE02044A45B002BD36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		747B7DE12044A45B002BD36E /* Build configuration list for PBXNativeTarget "BindKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747B7DE22044A45B002BD36E /* Debug */,
+				747B7DE32044A45B002BD36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 747B7DD02044A45B002BD36E /* Project object */;
+}
