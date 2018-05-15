@@ -102,7 +102,7 @@ class LogonController: UITableViewController {
 ### Adding BindKit to your app (Cocoapods integration)
 
 - If you have not already created a Podfile for your application, create one now: `pod init`
-- Add the following into your pod file: `pod 'BindKit'`
+- Add the following into your Podfile: `pod 'BindKit'`
 - Save the file and run: `pod install`
 
 ### Building
