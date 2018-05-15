@@ -4,7 +4,7 @@ A simple to use two-way data binding framework for iOS.  **Only one API to learn
 
 Supports Objective-C and Swift, Xcode 8 and 9, Swift 3 and 4, iOS 8 and above.
 
-Ships as a static library ready for you to link into your app (or you can include the source directly into your project). The static library is built as a 'fat' library and includes the following architectures: i386, x86_64, armv7s, armv7, arm64 and bitcode.
+Ships as a cocoapod or static library ready for you to link into your app (or you can include the source directly into your project). The static library is built as a 'fat' library and includes the following architectures: i386, x86_64, armv7s, armv7, arm64 and bitcode.
 
 ### Currently supported views
 
@@ -93,11 +93,17 @@ class LogonController: UITableViewController {
 }
 ```
 
-### Adding BindKit to your app
+### Adding BindKit to your app (Manual integration)
 
 - Link `libBindKit.a` into your app
 - Configure `Header Search Paths` to allow Xcode to find `BindKit.h` and `BindKitVendor.h`
 - Add `-ObjC` and `-all_load` to `Other Linker Flags`
+
+### Adding BindKit to your app (Cocoapods integration)
+
+- If you have not already created a Podfile for your application, create one now: `pod init`
+- Add the following into your pod file: `pod 'BindKit'`
+- Save the file and run: `pod install`
 
 ### Building
 
