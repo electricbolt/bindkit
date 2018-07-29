@@ -4,7 +4,7 @@ A simple to use two-way data binding framework for iOS.  **Only one API to learn
 
 Supports Objective-C, Swift 3 and 4, Xcode 8 and 9, iOS 8 and above.
 
-Supports Xcode 10.0 beta 3 (10L201y) and iOS 12.0 beta 3.
+Supports Xcode 10.0 beta 4 (10L213o) and iOS 12.0 beta 4.
 
 Ships as a cocoapod or static library ready for you to link into your app (or you can include the source directly into your project). The static library is built as a 'fat' library and includes the following architectures: i386, x86_64, armv7s, armv7, arm64 and bitcode.
 
