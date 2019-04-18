@@ -2,7 +2,7 @@
 
 set -e
 
-IOSSDK_VER="11.2"
+IOSSDK_VER="12.2"
 # xcodebuild -showsdks
 
 echo Compiling library source

@@ -7,19 +7,19 @@ import Foundation
 
 class RegistrationModel: NSObject {
 
-    dynamic var firstName: String?
-    dynamic var lastName: String?
-    dynamic var email: String?
-    dynamic var inputAge: Double {
+    @objc dynamic var firstName: String?
+    @objc dynamic var lastName: String?
+    @objc dynamic var email: String?
+    @objc dynamic var inputAge: Double {
         didSet {
             actualAge = String(format: "%.0f", inputAge);
         }
     }
-    dynamic var actualAge: String?
-    dynamic var subscribeAutomobile: Bool
-    dynamic var subscribeElectronics: Bool
-    dynamic var subscribeFurniture: Bool
-    dynamic var done: Bool
+    @objc dynamic var actualAge: String?
+    @objc dynamic var subscribeAutomobile: Bool
+    @objc dynamic var subscribeElectronics: Bool
+    @objc dynamic var subscribeFurniture: Bool
+    @objc dynamic var done: Bool
 
     override init() {
         firstName = ""

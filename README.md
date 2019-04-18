@@ -2,9 +2,13 @@
 
 A simple to use two-way data binding framework for iOS.  **Only one API to learn**.
 
-Supports Objective-C, Swift 3 and 4, Xcode 8, 9 and 10, iOS 8 and above.
+Supports Objective-C, Swift 5, Xcode 10.2, iOS 8 and above.
 
 Ships as a cocoapod or static library ready for you to link into your app (or you can include the source directly into your project). The static library is built as a 'fat' library and includes the following architectures: i386, x86_64, armv7s, armv7, arm64 and bitcode.
+
+### Looking for an older version?
+
+Tagged version 1.0.0 supports Objective-C, Swift 3 and 4, Xcode 8, 9 and 10, iOS 8 and above.
 
 ### Currently supported views
 
@@ -50,7 +54,7 @@ model.bindObjectKey(#keyPath(model.addressStr), toView: addressTextField, viewKe
 The following rules apply when using BindKit with Swift:
 
 1. Your model object must inherit from `NSObject`.
-2. Your models properties that participate in binding need to be marked `dynamic`.
+2. Your models properties that participate in binding need to be marked `@objc dynamic`.
 
 See [under the hood](#under-the-hood) for implementation details.
 
@@ -61,9 +65,9 @@ See [under the hood](#under-the-hood) for implementation details.
 ```swift
 class LogonModel: NSObject {
 	
-	dynamic var username: String!
-	dynamic var password: String!
-	dynamic var logonEnabled: Boolean
+	@objc dynamic var username: String!
+	@objc dynamic var password: String!
+	@objc dynamic var logonEnabled: Boolean
 	
 	override func boundPropertiesDidUpdate() {
 		logonEnabled = validate()
@@ -113,13 +117,13 @@ Whilst the libBindKit.a static library is prebuilt and included in the repositor
 
 The resulting static library and header files will be placed into the `release` directory.
 
-The build script currently assumes Xcode 9/SDK11.2. If you are using a different Xcode build chain, tweak the `IOSSDK_VER` variable in the build script as appropriate.
+The build script currently assumes Xcode 10.2/SDK12.2. If you are using a different Xcode build chain, tweak the `IOSSDK_VER` variable in the build script as appropriate.
 
 ### Under the hood
 
 #### Model
 
-Model properties that participate in binding are monitored for changes using Key-Value-Observing (KVO). For this reason model objects must inherit from `NSObject`, and if using Swift, properties must be marked with `dynamic`.
+Model properties that participate in binding are monitored for changes using Key-Value-Observing (KVO). For this reason model objects must inherit from `NSObject`, and if using Swift, properties must be marked with `@objc dynamic`.
 
 #### View
 

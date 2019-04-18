@@ -7,7 +7,7 @@ import Foundation
 
 fileprivate class Model: NSObject {
 
-    dynamic var text: String!
+    @objc dynamic var text: String!
 
     override init() {
         super.init()

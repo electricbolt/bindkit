@@ -130,7 +130,7 @@ extern NSString* UIButtonEnabled; // BOOL
 extern NSString* UIButtonHidden; // BOOL
 
 extern NSString* UIDatePickerDate; // NSDate
-extern NSString* UIDatePickerEnabled; // BOOL
+extern NSString* UIDatePickerEnabled; // BOOL - available on OS10+
 extern NSString* UIDatePickerHidden; // BOOL
 
 extern NSString* UIImageViewImage; // UIImage
@@ -171,6 +171,11 @@ extern NSString* UITextViewAttributedText; // NSAttributedString
 extern NSString* UITextViewEditable; // BOOL
 extern NSString* UITextViewHidden; // BOOL
 NS_ASSUME_NONNULL_END
+
+/**
+ @brief Returns the version of the BindKit library.
+ */
+extern NSString* _Nonnull EBKVersion(void);
 
 #include "BindKitVendor.h"
 

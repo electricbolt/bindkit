@@ -8,10 +8,10 @@ import Foundation
 fileprivate class Model: NSObject {
 
     var segueBindTextProperty: Bool = false
-    dynamic var text: String!
-    dynamic var attributedText: NSAttributedString!
-    dynamic var enabled: Bool = true
-    dynamic var hidden: Bool = false
+    @objc dynamic var text: String!
+    @objc dynamic var attributedText: NSAttributedString!
+    @objc dynamic var enabled: Bool = true
+    @objc dynamic var hidden: Bool = false
 
     override init() {
         super.init()

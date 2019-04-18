@@ -13,7 +13,7 @@ class AttrStr {
         if buf.length > 0 {
             buf.append(NSAttributedString(string: " "))
         }
-        buf.append(NSAttributedString(string: "\(key)=", attributes: [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 14.0)]))
+        buf.append(NSAttributedString(string: "\(key)=", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14.0)]))
         return self
     }
 

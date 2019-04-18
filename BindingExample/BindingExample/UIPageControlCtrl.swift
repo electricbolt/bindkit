@@ -7,10 +7,10 @@ import Foundation
 
 fileprivate class Model: NSObject {
 
-    dynamic var enabled: Bool = true
-    dynamic var hidden: Bool = false
-    dynamic var currentPage: Int = 0
-    dynamic var numberOfPages: Int = 1
+    @objc dynamic var enabled: Bool = true
+    @objc dynamic var hidden: Bool = false
+    @objc dynamic var currentPage: Int = 0
+    @objc dynamic var numberOfPages: Int = 1
 
     func calculated() -> NSAttributedString {
         return AttrStr()

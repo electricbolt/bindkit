@@ -17,7 +17,7 @@ class RegistrationCtrl: UITableViewController {
     @IBOutlet weak var furniture: UISwitch!
     @IBOutlet weak var doneButton: UIBarButtonItem!
 
-    var model = RegistrationModel()
+    @objc var model = RegistrationModel()
 
     override func viewDidLoad() {
         model.bindKey(#keyPath(model.firstName), view: firstName, viewKey: UITextFieldText)

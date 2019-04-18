@@ -7,7 +7,7 @@ import Foundation
 
 fileprivate class Model: NSObject {
     
-    dynamic var enabled: Bool = true
+    @objc dynamic var enabled: Bool = true
 
     func calculated() -> NSAttributedString {
         return AttrStr()

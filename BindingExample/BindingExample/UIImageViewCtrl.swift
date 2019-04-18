@@ -7,8 +7,8 @@ import Foundation
 
 fileprivate class Model: NSObject {
 
-    dynamic var image: UIImage! = UIImage(named: "cat.png")
-    dynamic var hidden: Bool = false
+    @objc dynamic var image: UIImage! = UIImage(named: "cat.png")
+    @objc dynamic var hidden: Bool = false
 
     func calculated() -> NSAttributedString {
         return AttrStr()
