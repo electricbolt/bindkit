@@ -2,11 +2,11 @@
 
 A simple to use two-way UIKit data binding framework for iOS. **Only one API to learn**.
 
-Supports Objective-C, Swift 5.10, Xcode 15.4, iOS 13+. Distributed as a static XCFramework ready for you to link into your app.
+Supports Objective-C, Swift 5.10, Xcode 15.4, iOS 13+. Distributed as a static XCFramework ready for you to link into your app (signed by Electric Bolt Limited KLCLPVKM8C).
 
 ### Currently supported views
 
-The following views are supported directly by BindKit:
+The following views and properties are directly supported by BindKit:
 
 View class | View properties
 -----------|--------------
@@ -91,15 +91,40 @@ class LogonController: UITableViewController {
 }
 ```
 
-### Adding BindKit to your app (Manual integration)
+## Adding BindKit to your app
+
+### Manual integration
 
 - Link `BindKit.xcframework` into your app.
 - Add the build settings `-ObjC` and `-all_load` to `Other Linker Flags`.
 
-### Adding BindKit to your app (Swift Package Manager)
+### Swift Package Manager
 
 - Add a Swift Package Manager dependency with the URL `https://github.com/electricbolt/bindkit`.
 - Add the build settings `-ObjC` and `-all_load` to `Other Linker Flags`.
+
+### PrivacyInfo.xcprivacy
+
+The iOS `BindKit.xcframework` includes an embedded `PrivacyInfo.xcprivacy` file. The file is effectively empty as BindKit does not have any Tracking component or use any APIs as per the Apple [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files) documentation.
+
+> Current PrivacyInfo.xcprivacy file contents
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSPrivacyTracking</key>
+    <false/>
+    <key>NSPrivacyTrackingDomains</key>
+    <array/>
+    <key>NSPrivacyCollectedDataTypes</key>
+    <array/>
+    <key>NSPrivacyAccessedAPITypes</key>
+    <array/>
+</dict>
+</plist>
+```
 
 ### Building
 
@@ -108,17 +133,17 @@ Whilst the static XCFramework is prebuilt and included in the repository, if you
 - Edit the `buildframework.sh` file. Comment out the `codesign` line.
 - Execute the command `./buildframework.sh`.
 
-The resulting static XCFramework will be placed into the root of the project.
+The rebuilt static XCFramework will be placed into the root of the project.
 
 The build script currently assumes iOS SDK 17.5. If you are using a different Xcode build chain, tweak the `IOSSDK_VER` variable in the build script as appropriate.
 
-### Under the hood
+## Under the hood
 
-#### Model
+### Model
 
 Model properties that participate in binding are monitored for changes using Key-Value-Observing (KVO). For this reason model objects must inherit from `NSObject`, and if using Swift, properties must be marked with `@objc dynamic`.
 
-#### View
+### View
 
 Views that participate in binding are dynamically subclassed at runtime. There is one dynamic subclass implemented for each supported view. Depending on the view, different methods for monitoring changes are required: target-action, delegation or notifications.
 
