@@ -1,0 +1,5 @@
+framework module BindKit {
+    umbrella header "BindKit.h"
+    export *
+    module * { export * }
+}

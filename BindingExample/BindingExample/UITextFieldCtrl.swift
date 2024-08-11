@@ -1,9 +1,8 @@
-/*******************************************************************************
- * UITextFieldCtrl.swift                                                       *
- * BindingExample - BindKit Copyright (c) 2018; Electric Bolt Limited.         *
- ******************************************************************************/
+// UITextFieldCtrl.swift
+// BindingExample - BindKit Copyright (c) 2018-2024; Electric Bolt Limited.
 
-import Foundation
+import UIKit
+import BindKit
 
 fileprivate class Model: NSObject {
 

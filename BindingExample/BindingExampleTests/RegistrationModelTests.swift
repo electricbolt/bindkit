@@ -1,7 +1,5 @@
-/*******************************************************************************
- * RegistrationModelTests.h                                                    *
- * BindKit Copyright (c) 2018; Electric Bolt Limited.                          *
- ******************************************************************************/
+// RegistrationModelTests.h
+// BindingExample - BindKit Copyright (c) 2018-2024; Electric Bolt Limited.
 
 import Foundation;
 import XCTest;

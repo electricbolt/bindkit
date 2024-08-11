@@ -1,7 +1,5 @@
-/*******************************************************************************
- * NSObjectEBKBindingTests.h                                                   *
- * BindKit Copyright (c) 2018; Electric Bolt Limited.                          *
- ******************************************************************************/
+// NSObjectEBKBindingTests.h
+// BindKit Copyright (c) 2018-2024; Electric Bolt Limited.
 
 @import XCTest;
 #import "BindKit.h"
@@ -43,7 +41,7 @@
 }
 
 - (void) testLibraryVersion {
-    XCTAssertEqualObjects(EBKVersion(), @"1.0.0");
+    XCTAssertEqualObjects(EBKVersion(), @"1.1.0");
 }
 
 - (void) testBindingKey {

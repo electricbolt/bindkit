@@ -1,9 +1,8 @@
-/*******************************************************************************
- * RegistrationCtrl.swift                                                      *
- * BindingExample - BindKit Copyright (c) 2018; Electric Bolt Limited.         *
- ******************************************************************************/
+// RegistrationCtrl.swift
+// BindingExample - BindKit Copyright (c) 2018-2024; Electric Bolt Limited.
 
 import UIKit
+import BindKit
 
 class RegistrationCtrl: UITableViewController {
 
@@ -34,8 +33,9 @@ class RegistrationCtrl: UITableViewController {
     }
     
     @IBAction func donePressed(_ sender: Any) {
-        let v = UIAlertView(title: "Binding Example", message: "Done pressed", delegate: nil, cancelButtonTitle: "OK");
-        v.show()
+        let alert = UIAlertController(title: "Binding Example", message: "Done pressed", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

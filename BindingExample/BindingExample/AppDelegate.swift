@@ -1,7 +1,5 @@
-/*******************************************************************************
- * AppDelegate.swift                                                           *
- * BindingExample - BindKit Copyright (c) 2018; Electric Bolt Limited.         *
- ******************************************************************************/
+// AppDelegate.swift
+// BindingExample - BindKit Copyright (c) 2018; Electric Bolt Limited.
 
 import UIKit
 

@@ -1,7 +1,5 @@
-/*******************************************************************************
- * EBKUISegmentedControlTests.h                                                *
- * BindKit Copyright (c) 2018; Electric Bolt Limited.                          *
- ******************************************************************************/
+// EBKUISegmentedControlTests.h
+// BindKit Copyright (c) 2018-2024; Electric Bolt Limited.
 
 @import XCTest;
 #import "BindKit.h"

@@ -1,9 +1,7 @@
-/*******************************************************************************
- * Colorize.swift                                                              *
- * BindingExample - BindKit Copyright (c) 2018; Electric Bolt Limited.         *
- ******************************************************************************/
+// Colorize.swift
+// BindingExample - BindKit Copyright (c) 2018-2024; Electric Bolt Limited.
 
-import Foundation
+import UIKit
 
 func colorize(_ s : String) -> NSAttributedString {
     let s = NSMutableAttributedString(string: s)

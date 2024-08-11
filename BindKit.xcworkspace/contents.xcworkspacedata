@@ -5,6 +5,6 @@
       location = "group:BindingExample/BindingExample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:BindKit/BindKit.xcodeproj">
+      location = "group:/Users/Shared/build/bindkit/BindKit/BindKit.xcodeproj">
    </FileRef>
 </Workspace>

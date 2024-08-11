@@ -1,7 +1,5 @@
-/*******************************************************************************
- * EBKDeallocationObserverTests.h                                              *
- * BindKit Copyright (c) 2018; Electric Bolt Limited.                          *
- ******************************************************************************/
+// EBKDeallocationObserverTests.h
+// BindKit Copyright (c) 2018-2024; Electric Bolt Limited.
 
 @import XCTest;
 #import "EBKDeallocationObserver.h"

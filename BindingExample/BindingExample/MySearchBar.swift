@@ -1,22 +1,22 @@
-/*******************************************************************************
- * MySearchBar.swift                                                           *
- * BindingExample - BindKit Copyright (c) 2018; Electric Bolt Limited.         *
- ******************************************************************************/
+// MySearchBar.swift
+// BindingExample - BindKit Copyright (c) 2018-2024; Electric Bolt Limited.
 
-import Foundation
+import UIKit
+import BindKit
 
 let MySearchBarText = "text"
 
 /**
- Demonstrates creating a `custom` dynamic subclass of a view in Swift.
- You can augment any view with binding capabilities that isn't already
- supported by BindKit.
+ Demonstrates creating a `custom` dynamic subclass of a view in Swift. You can augment any view with binding
+ capabilities that isn't already supported by BindKit.
  */
 
 class MySearchBar: UISearchBar {
 
-    fileprivate static var multicastContext = "multicastContext"
-    fileprivate static var searchBarDelegateContext = "searchBarDelegateContext"
+    // Changed to malloc(1)! to fix Swift 5.9 warning using strings for associated object contexts:
+    // https://forums.swift.org/t/handling-the-new-forming-unsaferawpointer-warning/65523/7
+    fileprivate static var multicastContext = malloc(1)!
+    fileprivate static var searchBarDelegateContext = malloc(1)!
 
     override func viewDidBindWithModel() {
         // UIView subclasses can't have a delegate pointing to itself, instead
@@ -45,12 +45,12 @@ class MySearchBar: UISearchBar {
 
     override var delegate: UISearchBarDelegate? {
         set {
-            // Set updates the EBKMulticastDelegate.secondaryDelegate property
+            // 'set' updates the EBKMulticastDelegate.secondaryDelegate property.
             let multicast = objc_getAssociatedObject(self, &MySearchBar.multicastContext) as! EBKMulticastDelegate?
             multicast!.secondaryDelegate = newValue
         }
         get {
-            // Get always return the EBKMulticastDelegate instance
+            // 'get' always return the EBKMulticastDelegate instance.
             return (objc_getAssociatedObject(self, &MySearchBar.multicastContext) as! UISearchBarDelegate)
         }
     }
@@ -61,8 +61,7 @@ class MySearchBar: UISearchBar {
 
     override var text: String? {
         set {
-            // BindKit suggests that you don't set properties if the value
-            // hasn't changed.
+            // BindKit suggests that you don't set properties if the value hasn't changed.
             if self.text != newValue {
                 super.text = newValue
             }
@@ -83,8 +82,7 @@ class MySearchBar: UISearchBar {
     }
 
     override func updateViewFromBoundModel() {
-        // BindKit suggests that you don't set properties if the value
-        // hasn't changed.
+        // BindKit suggests that you don't set properties if the value hasn't changed.
         let v = boundValue(viewKey: MySearchBarText)
         if v is NSNull {
             if super.text != nil {

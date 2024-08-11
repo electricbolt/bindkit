@@ -1,14 +1,8 @@
 # BindKit
 
-A simple to use two-way data binding framework for iOS.  **Only one API to learn**.
+A simple to use two-way data binding framework for iOS. **Only one API to learn**.
 
-Supports Objective-C, Swift 5, Xcode 10.2, iOS 8 and above.
-
-Ships as a cocoapod or static library ready for you to link into your app (or you can include the source directly into your project). The static library is built as a 'fat' library and includes the following architectures: i386, x86_64, armv7s, armv7, arm64 and bitcode.
-
-### Looking for an older version?
-
-Tagged version 1.0.0 supports Objective-C, Swift 3 and 4, Xcode 8, 9 and 10, iOS 8 and above.
+Supports Objective-C, Swift 5.10, Xcode 15.4, iOS 13+. Distributed as a static XCFramework ready for you to link into your app.
 
 ### Currently supported views
 
@@ -99,25 +93,24 @@ class LogonController: UITableViewController {
 
 ### Adding BindKit to your app (Manual integration)
 
-- Link `libBindKit.a` into your app
-- Configure `Header Search Paths` to allow Xcode to find `BindKit.h` and `BindKitVendor.h`
-- Add `-ObjC` and `-all_load` to `Other Linker Flags`
+- Link `BindKit.xcframework` into your app.
+- Add the build settings `-ObjC` and `-all_load` to `Other Linker Flags`.
 
-### Adding BindKit to your app (Cocoapods integration)
+### Adding BindKit to your app (Swift Package Manager)
 
-- If you have not already created a Podfile for your application, create one now: `pod init`
-- Add the following into your Podfile: `pod 'BindKit'`
-- Save the file and run: `pod install`
+- Add a Swift Package Manager dependency with the URL `https://github.com/electricbolt/bindkit`.
+- Add the build settings `-ObjC` and `-all_load` to `Other Linker Flags`.
 
 ### Building
 
-Whilst the libBindKit.a static library is prebuilt and included in the repository, if you need to rebuild then execute the following command:
+Whilst the static XCFramework is prebuilt and included in the repository, if you need to rebuild then follow these steps:
 
-`./buildlibrary.sh`
+- Edit the `buildframework.sh` file. Comment out the `codesign` line.
+- Execute the command `./buildframework.sh`.
 
-The resulting static library and header files will be placed into the `release` directory.
+The resulting static XCFramework will be placed into the root of the project.
 
-The build script currently assumes Xcode 10.2/SDK12.2. If you are using a different Xcode build chain, tweak the `IOSSDK_VER` variable in the build script as appropriate.
+The build script currently assumes iOS SDK 17.5. If you are using a different Xcode build chain, tweak the `IOSSDK_VER` variable in the build script as appropriate.
 
 ### Under the hood
 

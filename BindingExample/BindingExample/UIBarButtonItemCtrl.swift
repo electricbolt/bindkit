@@ -1,9 +1,8 @@
-/*******************************************************************************
- * UIBarButtonItemCtrl.swift                                                   *
- * BindingExample - BindKit Copyright (c) 2018; Electric Bolt Limited.         *
- ******************************************************************************/
+// UIBarButtonItemCtrl.swift
+// BindingExample - BindKit Copyright (c) 2018-2024; Electric Bolt Limited.
 
-import Foundation
+import UIKit
+import BindKit
 
 fileprivate class Model: NSObject {
     
@@ -41,8 +40,9 @@ class UIBarButtonItemCtrl: UIViewController {
     }
     
     @IBAction func barButtonItemPressed(_ sender: Any) {
-        let v = UIAlertView(title: "Binding Example", message: "UIBarButtonItem pressed", delegate: nil, cancelButtonTitle: "OK");
-        v.show()
+        let alert = UIAlertController(title: "Binding Example", message: "UIBarButtonItem pressed", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

@@ -31,9 +31,9 @@
 		74B55A80204DF92C0034CC61 /* UIPageControlCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B55A7F204DF92C0034CC61 /* UIPageControlCtrl.swift */; };
 		74B55A82204E00080034CC61 /* UISegmentedControlCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B55A81204E00080034CC61 /* UISegmentedControlCtrl.swift */; };
 		74B55A84204E048B0034CC61 /* UISliderCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B55A83204E048B0034CC61 /* UISliderCtrl.swift */; };
-		74B82D3E2044E438009D4845 /* libBindKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B82D3D2044E438009D4845 /* libBindKit.a */; };
 		74BC764B204D2C58009672FA /* UIDatePickerCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC764A204D2C58009672FA /* UIDatePickerCtrl.swift */; };
 		74BC764D204D3935009672FA /* UIImageViewCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC764C204D3935009672FA /* UIImageViewCtrl.swift */; };
+		C35A9A652C5E2B27008B9A80 /* BindKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35A9A642C5E2B27008B9A80 /* BindKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +79,9 @@
 		74B82D412044F213009D4845 /* BindingExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BindingExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		74BC764A204D2C58009672FA /* UIDatePickerCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerCtrl.swift; sourceTree = "<group>"; };
 		74BC764C204D3935009672FA /* UIImageViewCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewCtrl.swift; sourceTree = "<group>"; };
+		C35A9A602C5E28D9008B9A80 /* BindKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BindKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35A9A642C5E2B27008B9A80 /* BindKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BindKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35A9A7B2C5E3407008B9A80 /* BindKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BindKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B82D3E2044E438009D4845 /* libBindKit.a in Frameworks */,
+				C35A9A652C5E2B27008B9A80 /* BindKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +188,9 @@
 		74B82D3C2044E438009D4845 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C35A9A7B2C5E3407008B9A80 /* BindKit.framework */,
+				C35A9A642C5E2B27008B9A80 /* BindKit.framework */,
+				C35A9A602C5E28D9008B9A80 /* BindKit.framework */,
 				74B82D3D2044E438009D4845 /* libBindKit.a */,
 			);
 			name = Frameworks;
@@ -490,6 +496,7 @@
 				DEVELOPMENT_TEAM = KLCLPVKM8C;
 				HEADER_SEARCH_PATHS = ../BindKit/BindKit/public;
 				INFOPLIST_FILE = BindingExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -513,6 +520,7 @@
 				DEVELOPMENT_TEAM = KLCLPVKM8C;
 				HEADER_SEARCH_PATHS = ../BindKit/BindKit/public;
 				INFOPLIST_FILE = BindingExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -534,7 +542,7 @@
 				DEVELOPMENT_TEAM = KLCLPVKM8C;
 				HEADER_SEARCH_PATHS = ../BindKit/BindKit/public;
 				INFOPLIST_FILE = BindingExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.electricbolt.BindingExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -552,7 +560,7 @@
 				DEVELOPMENT_TEAM = KLCLPVKM8C;
 				HEADER_SEARCH_PATHS = ../BindKit/BindKit/public;
 				INFOPLIST_FILE = BindingExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.electricbolt.BindingExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

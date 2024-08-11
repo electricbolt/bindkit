@@ -1,9 +1,8 @@
-/*******************************************************************************
- * RegistrationModel.swift                                                     *
- * BindingExample - BindKit Copyright (c) 2018; Electric Bolt Limited.         *
- ******************************************************************************/
+// RegistrationModel.swift
+// BindingExample - BindKit Copyright (c) 2018-2024; Electric Bolt Limited.
 
-import Foundation
+import UIKit
+import BindKit
 
 class RegistrationModel: NSObject {
 
