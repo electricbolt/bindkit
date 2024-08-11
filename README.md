@@ -1,6 +1,6 @@
 # BindKit
 
-A simple to use two-way data binding framework for iOS. **Only one API to learn**.
+A simple to use two-way UIKit data binding framework for iOS. **Only one API to learn**.
 
 Supports Objective-C, Swift 5.10, Xcode 15.4, iOS 13+. Distributed as a static XCFramework ready for you to link into your app.
 
